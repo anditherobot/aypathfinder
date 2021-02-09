@@ -28,7 +28,7 @@ SECRET_KEY = 'zizktk+i-z%dc&dogtn*89vmh23$w*=re&l!)j$!#9_+l247y_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 CRISPY_FAIL_SILENTLY = not DEBUG
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
