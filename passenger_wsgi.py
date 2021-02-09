@@ -1,0 +1,1 @@
+from aycore.wsgi import application

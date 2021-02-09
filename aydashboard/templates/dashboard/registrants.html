@@ -1,0 +1,68 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block title %}List of Registrants{% endblock title %}
+{% block content %}
+ <h2>Pathfinders List of Registrants</h2>
+
+ <a class="btn btn-success" href="/">Create a participant </a>
+ <a class="btn btn-warning" href="/">Export to spreadsheet </a>
+<div class="row">
+ 
+  <div class="col-sm-12">
+    <table class="table table-hover table-striped  table-responsive table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Phone #</th>
+          <th scope="col">Email</th>
+
+          <th scope="col">Address</th>
+       
+          <th colspan="2" scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for person in registrants_list %}
+        <tr  onclick="window.location='{% url 'registrants-details' person.id  %}';">  
+          <td>{{person.first_name }}{{person.id}}</td>
+          <td>{{person.last_name}}</td>
+          <td>{{person.phone_number}}</td>
+          <td>{{person.email}}</td>
+          <td>{{person.address}}</td>
+         
+          <td><a class="btn btn-success" href={% url 'registrants-details' person.id  %}> Details </a></td> 
+          <td><a class="btn btn-danger" href="#"> Delete </a></td> 
+        </tr>
+        {% empty %}
+        <td>No Person Yet</td>
+    {% endfor %}
+
+      
+
+      </tbody>
+    </table>
+
+</div>
+
+
+</div>
+
+
+
+{% endblock %}
+
+
+<style>
+  tr:hover{
+    cursor: pointer;
+    }
+</style>
+
+
+
+
+
+
+

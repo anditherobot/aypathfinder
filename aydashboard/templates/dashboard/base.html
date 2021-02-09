@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %} {% endblock title %} </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/app.css' %}" rel="stylesheet">
+
+</head>
+
+<body >
+    
+    
+    <!-- Page Content -->
+    <div class="container-fluid dashboard-container">
+        <div class="row">
+            <section class="col-2 bg-dark dashboard-menu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Registrants</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="checklists/">Checklists</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="btn btn-primary" href="{% url 'logout' %}">logout</a>
+                    </li>
+                  </ul>
+            
+            
+            </section>
+            
+            <section class="col-10 dashboard-table">
+            
+          {% block content %} {% endblock %}
+            
+            </section>
+                
+            </div>
+
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'js/app.js'%}"></script>
+
+</body>
+
+</html>

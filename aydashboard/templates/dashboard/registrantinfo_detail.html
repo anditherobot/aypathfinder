@@ -1,0 +1,63 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+{% block title %}{{title}}{% endblock title %}
+{% block content %}
+ <h2> Pathfinders Registrant Details</h2>
+ <div class="mb-1">
+
+ <a class="btn btn-warning mb-2" href="{% url 'registrants-list'%}"> << Back to List </a>
+ <a class="btn btn-warning mb-2" href="{% url 'registrants-list'%}"> << Download as PDF </a>
+
+<div class="row">
+ 
+  <div class="col-sm-6">
+  
+
+    <div class="card ">
+        <h3 class="card-header">Registrant Info</h3>
+
+      <div class="card-body">
+        <h4 class="card-title"><strong>Name:</strong> {{ object.first_name }}  {{ object.first_name }}</h4>
+        <ul  class="list-group">  
+          <li class="list-group-item"> <strong >Address:</strong> {{ object.address }} {{object.apt_number}} {{object.apartmment_complex}} {{object.city}} {{object.state}} {{object.zip}}</li>
+          <li class="list-group-item"> <strong >Phone Number:</strong>  {{ object.phone_number }}</li>
+          <li class="list-group-item"> <strong >Email:</strong>  {{ object.email }}</li>
+          <li class="list-group-item"> <strong >Address:</strong>  {{ object.city }} {{ object.state }} {{ object.zip_code}}</li>
+          <li class="list-group-item"> <strong >Grade:</strong>  {{ object.grade }}</li>
+          <li class="list-group-item"> <strong >Church:</strong>  {{ object.church }}</li>
+          <h3>History Information</h3>
+          <li class="list-group-item"> <strong >I have been a Pathfinder</strong>  {{ object.iwaspathfinder }}  <strong>at:</strong> {{ object.ifyespathfinder }}</li>
+          <li class="list-group-item"> <strong >My dad is a Master Guide</strong>  {{ object.iwaspathfinder }}</li>
+          <li class="list-group-item"> <strong >My father has been a Pathfinder</strong>  {{ object.ifyespathfinder }}</li>
+          <li class="list-group-item"> <strong >My mother is a Master Guide</strong>  {{ object.dadismasterguide }}</li>
+          <li class="list-group-item"> <strong >My mother has been a Pathfinder</strong>  {{ object.dadwaspathfinder }}</li>
+          <li class="list-group-item"> <strong >I wish to join the following Special Club Program</strong>  {{ object.momismasterguide }}</li>
+          
+        </ul>
+      </div>
+    </div>
+ </div>
+ <div class="col-sm-6">
+
+  <div class="card bg-secondary">
+    <div class="card-header">
+      <h1 class="badget ">  Participant Checklists</h1>
+
+    </div>
+    <div class="card-body  ">
+      <h5 class="card-title">First Name: {{ object.requestor.first_name }} Last: Name: {{ object.requestor.first_name }}</h5>
+      <ul  class="list-group">
+        <li class="list-group-item"> {{ object.requestor.last_name }}</li>
+        <li class="list-group-item"> {{ object.requestor.phone_number }}</li>
+        <li class="list-group-item"> {{ object.requestor.email }}</li>
+        <li class="list-group-item"> {{ object.requestor.relationship }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+{% endblock %}
