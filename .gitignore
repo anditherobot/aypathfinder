@@ -11,6 +11,6 @@ venv.bak/
 .htaccess
 .vscode/
 tmp/
-
+db.sqlite3
 ../history.html
 ../node_modules/
