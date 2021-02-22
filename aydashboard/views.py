@@ -4,7 +4,8 @@ from django.http import HttpResponse
 from django.views.generic import ListView, View, DetailView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from ayregistration.models import RegistrantInfo, RegistrationCheckList
-
+import logging
+logger = logging.getLogger(__name__)
 
 # Create your views here.
 

@@ -35,17 +35,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
 
-    'wagtail.contrib.forms',
-  'wagtail.contrib.redirects',
-  'wagtail.embeds',
-  'wagtail.sites',
-  'wagtail.users',
-  'wagtail.snippets',
-  'wagtail.documents',
-  'wagtail.images',
-  'wagtail.search',
-  'wagtail.admin',
-  'wagtail.core',
+    
 
   'taggit',
   'modelcluster',
@@ -74,7 +64,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'wagtail.contrib.redirects.middleware.RedirectMiddleware',
+
 ]
 
 ROOT_URLCONF = 'aycore.urls'
@@ -166,30 +156,44 @@ REST_FRAMEWORK = {
 
 
 
-# WAGTAIL SETTINGS
 
-# This is the human-readable name of your Wagtail install
-# which welcomes users upon login to the Wagtail admin.
-WAGTAIL_SITE_NAME = 'My Project'
 
-# Override the search results template for wagtailsearch
-# WAGTAILSEARCH_RESULTS_TEMPLATE = 'myapp/search_results.html'
-# WAGTAILSEARCH_RESULTS_TEMPLATE_AJAX = 'myapp/includes/search_listing.html'
-
-# Replace the search backend
-#WAGTAILSEARCH_BACKENDS = {
-#  'default': {
-#    'BACKEND': 'wagtail.search.backends.elasticsearch2',
-#    'INDEX': 'myapp'
-#  }
-#}
-
-# Wagtail email notifications from address
-# WAGTAILADMIN_NOTIFICATION_FROM_EMAIL = 'wagtail@myhost.io'
-
-# Wagtail email notification format
-# WAGTAILADMIN_NOTIFICATION_USE_HTML = True
 
 # Reverse the default case-sensitive handling of tags
 TAGGIT_CASE_INSENSITIVE = True
 
+LOGGING = {
+    'version': 1,
+    # Version of logging
+    'disable_existing_loggers': False,
+ 
+   
+ 
+    'formatters':{
+        'Simple_Format':{
+            'format': '{levelname} {message}',
+            'style': '{',
+        }
+    },
+ 
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': './logs/log_file1.log',
+            'formatter': 'Simple_Format',
+        },
+ 
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+        },
+    },
+ 
+    'loggers': {
+        'django': {
+            'handlers': ['file', 'console'],
+            'level': 'DEBUG',
+        },
+    },
+}

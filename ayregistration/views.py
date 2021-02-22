@@ -6,6 +6,8 @@ from django.http import HttpResponse
 from django.views.generic.edit import CreateView, FormView
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+import logging
+logger = logging.getLogger(__name__)
 
 from django.urls import reverse_lazy
 # Create your views here.
@@ -19,12 +21,13 @@ def index(request):
         if  form.is_valid():
             form.save()
             #send email
+            logger.debug("Form is saved with values", form.cleaned_data)
             return redirect('confirm')
             
         else:
             messages.error(request, 'The form is invalid.')
 
-        return render(request, 'ayregistration/index.html', {'form': form})
+        #return render(request, 'ayregistration/index.html', {'form': form})
 
     else:
         form = RegistrantForm()
