@@ -86,3 +86,42 @@ INFO "GET / HTTP/1.1" 200 9339
 INFO "POST / HTTP/1.1" 302 0
 INFO "GET /confirm/ HTTP/1.1" 200 1534
 INFO "GET / HTTP/1.1" 200 9339
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 9061
+INFO "GET /static/css/app.css HTTP/1.1" 200 3120
+INFO "GET /static/js/app.js HTTP/1.1" 200 100
+INFO "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 81084
+INFO "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 86927
+INFO "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 160403
+INFO "GET /static/img/pathfinder-logo.png HTTP/1.1" 200 105319
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2995
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 6081
+INFO "GET /static/grappelli/jquery/ui/jquery-ui.min.css HTTP/1.1" 200 30163
+INFO "GET /static/grappelli/stylesheets/mueller/grid/output.css HTTP/1.1" 200 36537
+INFO "GET /static/grappelli/jquery/jquery-migrate-3.0.1.min.js HTTP/1.1" 200 11421
+INFO "GET /static/grappelli/stylesheets/screen.css HTTP/1.1" 200 167948
+INFO "GET /static/grappelli/jquery/jquery.min.js HTTP/1.1" 200 86927
+INFO "GET /static/grappelli/js/grappelli.min.js HTTP/1.1" 200 27664
+INFO "GET /static/grappelli/jquery/ui/jquery-ui.min.js HTTP/1.1" 200 240427
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 6421
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 6421
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 6421
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 6421
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 6421
+INFO /mnt/v/src/labs/ay.templesalemsda.org/ayregistration/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 9061
+INFO "GET /static/css/app.css HTTP/1.1" 200 3120
+INFO "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 160403
+INFO "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 86927
+INFO "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 81084
+INFO "GET /static/js/app.js HTTP/1.1" 200 100
+INFO "GET /static/img/pathfinder-logo.png HTTP/1.1" 200 105319
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2995
+INFO "POST / HTTP/1.1" 302 0
+INFO "GET /confirm HTTP/1.1" 301 0
+INFO "GET /confirm/ HTTP/1.1" 200 1534
+INFO "GET / HTTP/1.1" 200 9339

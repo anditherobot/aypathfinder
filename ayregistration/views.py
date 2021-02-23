@@ -23,7 +23,7 @@ def index(request):
             #send email
             logger.info("Form is saved with values", form.cleaned_data)
             messages.info(request, "Info: The form has been filled successfully. Thank you!!!")
-            return redirect('confirm')
+            return redirect('/confirm')
             
         else:
             messages.error(request, 'The form is invalid.')
