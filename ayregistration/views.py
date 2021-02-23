@@ -21,7 +21,7 @@ def index(request):
         if  form.is_valid():
             form.save()
             #send email
-            logger.debug("Form is saved with values", form.cleaned_data)
+            logger.info("Form is saved with values", form.cleaned_data)
             return redirect('confirm')
             
         else:
