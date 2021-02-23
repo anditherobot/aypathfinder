@@ -22,12 +22,13 @@ def index(request):
             form.save()
             #send email
             logger.info("Form is saved with values", form.cleaned_data)
+            messages.info(request, "Info: The form has been filled successfully. Thank you!!!")
             return redirect('confirm')
             
         else:
             messages.error(request, 'The form is invalid.')
 
-        #return render(request, 'ayregistration/index.html', {'form': form})
+        return render(request, 'ayregistration/index.html', {'form': form})
 
     else:
         form = RegistrantForm()

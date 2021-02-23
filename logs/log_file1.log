@@ -14,3 +14,75 @@ WARNING Not Found: /favicon.ico
 WARNING "GET /favicon.ico HTTP/1.1" 404 2994
 INFO "POST / HTTP/1.1" 302 0
 INFO "GET /confirm HTTP/1.1" 200 1740
+INFO Watching for file changes with StatReloader
+INFO /mnt/v/src/labs/ay.templesalemsda.org/ayregistration/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 9061
+INFO "GET /static/css/app.css HTTP/1.1" 200 3120
+INFO "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 160403
+INFO "GET /static/img/pathfinder-logo.png HTTP/1.1" 200 105319
+INFO "POST / HTTP/1.1" 200 9536
+INFO /mnt/v/src/labs/ay.templesalemsda.org/ayregistration/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 9061
+INFO /mnt/v/src/labs/ay.templesalemsda.org/ayregistration/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/c/Users/expan/Desktop/ay/ay.templesalemsda.org/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/expan/Desktop/ay/ay.templesalemsda.org/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/v/src/labs/ay.templesalemsda.org/ayregistration/views.py", line 24, in index
+    logger.info("Form is saved with values" + form.cleaned_data)
+TypeError: can only concatenate str (not "dict") to str
+ERROR "POST / HTTP/1.1" 500 66010
+INFO /mnt/v/src/labs/ay.templesalemsda.org/ayregistration/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 9061
+INFO "POST / HTTP/1.1" 200 9533
+INFO "GET / HTTP/1.1" 200 9061
+INFO "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO "GET /static/js/app.js HTTP/1.1" 200 100
+INFO "GET /static/img/pathfinder-logo.png HTTP/1.1" 200 105319
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2824
+INFO "POST / HTTP/1.1" 200 10005
+INFO "POST / HTTP/1.1" 200 10005
+INFO "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO "GET /static/js/app.js HTTP/1.1" 304 0
+INFO "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO "GET /static/img/pathfinder-logo.png HTTP/1.1" 304 0
+INFO "GET / HTTP/1.1" 200 9061
+INFO "GET / HTTP/1.1" 200 9061
+INFO "GET /static/css/app.css HTTP/1.1" 200 3120
+INFO "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 160403
+INFO "POST / HTTP/1.1" 200 10016
+INFO "POST / HTTP/1.1" 200 10008
+INFO "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO "GET /static/js/app.js HTTP/1.1" 200 100
+INFO "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO "GET /static/img/pathfinder-logo.png HTTP/1.1" 304 0
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2824
+INFO "POST / HTTP/1.1" 200 10008
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 9062
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2824
+INFO "POST / HTTP/1.1" 200 10009
+INFO /mnt/v/src/labs/ay.templesalemsda.org/ayregistration/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /mnt/v/src/labs/ay.templesalemsda.org/ayregistration/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST / HTTP/1.1" 302 0
+INFO "GET /confirm HTTP/1.1" 200 1740
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 9339
+INFO "POST / HTTP/1.1" 302 0
+INFO "GET /confirm/ HTTP/1.1" 200 1534
+INFO "GET / HTTP/1.1" 200 9339

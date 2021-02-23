@@ -10,7 +10,7 @@ from ayregistration.forms import *
 
 urlpatterns = [
      path('', index, name='index'),
-     path('confirm', confirm, name='confirm'),
+     path('confirm/', confirm, name='confirm'),
     
     #path('parttwo', PartTwo.as_view(), name='parttwo'),
     #path('partthree', PartThree.as_view(), name='partthree'),
