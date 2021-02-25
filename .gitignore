@@ -12,5 +12,6 @@ venv.bak/
 .vscode/
 tmp/
 db.sqlite3
+logs/log_file1.log
 ../history.html
 ../node_modules/
